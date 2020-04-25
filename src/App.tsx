@@ -4,6 +4,9 @@ import './App.css';
 import UserInputComponent from './components/userInputComponent'
 import UserOutputComponent from './components/userOutputComponent'
 import ValidationComponent from './components/validationComponent'
+import ShareFileComponent from './components/shareFileButton/shareFileComponent'
+import { Dropdown } from 'semantic-ui-react';
+import countryOptions from "../src/__json__/data/searchData.json";
 
 function App() {
   const [userInp, setuserInp] = useState('priyam')
@@ -19,6 +22,8 @@ function App() {
       <UserInputComponent  title={userInp} changed={changeInput}></UserInputComponent>
       <UserOutputComponent title={userInp}></UserOutputComponent>
       <ValidationComponent size={InpLength}></ValidationComponent>
+      <ShareFileComponent></ShareFileComponent>
+      
     </div>
   );
 }

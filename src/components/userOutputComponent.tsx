@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 const userOutputComponent: React.FC<{title:string }> = props => {
+   
     const {
         title
       } = props
     return (
         <div style={{marginTop: '10px'}}>
-             <p>{title}</p>
+             <span>{title}</span>
         </div>
     )
 }

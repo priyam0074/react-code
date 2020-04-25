@@ -1,0 +1,21 @@
+{
+    "data":  [
+        { "name": "Adrianna", "email": "af@gmail.com", "isOwner": true },
+        { "name": "akash", "email": "af@gmail.com" },
+        { "name": "divya", "email": "af@gmail.com" },
+        { "name": "shiwa", "email": "af@gmail.com" },
+        { "name": "yash", "email": "af@gmail.com" },
+        { "name": "mukesh", "email": "af@gmail.com" },
+        { "name": "decs", "email": "af@gmail.com" },
+        { "name": "mayank", "email": "af@gmail.com" },
+        { "name": "Ajaynna", "email": "af@gmail.com" },
+        { "name": "emily", "email": "af@gmail.com" },
+        { "name": "Aditya", "email": "af@gmail.com" },
+        { "name": "chacha", "email": "chachaaf@gmail.com" },
+        { "name": "paul", "email": "af@gmail.com" },
+        { "name": "naul", "email": "priyamaf@gmail.com" },
+        { "name": "sam", "email": "apulaf@gmail.com" },
+        { "name": "tri", "email": "athf@gmail.com" }
+      ]
+  }
+  
