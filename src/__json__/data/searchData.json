@@ -1,21 +1,19 @@
-{
-    "data":  [
-        { "name": "Adrianna", "email": "af@gmail.com", "isOwner": true },
-        { "name": "akash", "email": "af@gmail.com" },
-        { "name": "divya", "email": "af@gmail.com" },
-        { "name": "shiwa", "email": "af@gmail.com" },
-        { "name": "yash", "email": "af@gmail.com" },
-        { "name": "mukesh", "email": "af@gmail.com" },
-        { "name": "decs", "email": "af@gmail.com" },
-        { "name": "mayank", "email": "af@gmail.com" },
-        { "name": "Ajaynna", "email": "af@gmail.com" },
-        { "name": "emily", "email": "af@gmail.com" },
-        { "name": "Aditya", "email": "af@gmail.com" },
-        { "name": "chacha", "email": "chachaaf@gmail.com" },
-        { "name": "paul", "email": "af@gmail.com" },
-        { "name": "naul", "email": "priyamaf@gmail.com" },
-        { "name": "sam", "email": "apulaf@gmail.com" },
-        { "name": "tri", "email": "athf@gmail.com" }
+ [
+        { "key": "Adrianna", "value": "Adrianna", "label": "Adrianna@gmail.com", "isOwner": true},
+        { "key": "akash","value": "akash", "label": "akash@gmail.com" },
+        { "key": "divya", "value": "divya","label": "divya@gmail.com" },
+        { "key": "shiwa","value": "shiwa", "label": "shiwa@gmail.com" },
+        { "key": "yash", "value": "yash","label": "yash@gmail.com" },
+        { "key": "mukesh","value": "mukesh", "label": "mukesh@gmail.com" },
+        { "key": "decs", "value": "decs","label": "decs@gmail.com" },
+        { "key": "mayank", "value": "mayank","label": "mayank@gmail.com" },
+        { "key": "Ajaynna","value": "Ajaynna", "label": "Ajaynna@gmail.com" },
+        { "key": "emily", "value": "emily","label": "emily@gmail.com" },
+        { "key": "Aditya", "value": "Aditya","label": "Aditya@gmail.com" },
+        { "key": "chacha","value": "chacha", "label": "chachaaf@gmail.com" },
+        { "key": "paul", "value": "paul","label": "paul@gmail.com" },
+        { "key": "naul", "value": "naul","label": "naul@gmail.com" },
+        { "key": "sam", "value": "sam","label": "sam@gmail.com" },
+        { "key": "tri","value": "tri", "label": "tri@gmail.com" }
       ]
-  }
   

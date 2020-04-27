@@ -5,8 +5,6 @@ import UserInputComponent from './components/userInputComponent'
 import UserOutputComponent from './components/userOutputComponent'
 import ValidationComponent from './components/validationComponent'
 import ShareFileComponent from './components/shareFileButton/shareFileComponent'
-import { Dropdown } from 'semantic-ui-react';
-import countryOptions from "../src/__json__/data/searchData.json";
 
 function App() {
   const [userInp, setuserInp] = useState('priyam')

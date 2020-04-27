@@ -6,11 +6,45 @@
   height: 40vmin;
   pointer-events: none;
 }
+.css-2b097c-container {
+  width: 74rem !important;
+}
+.css-yk16xz-control {
+  width: 74rem !important;
+}
+.card-placement {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
 
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.dropdown.dropdown-scroll .dropdown-list{
+  max-height: 233px;
+  overflow-y: auto;
+  list-style-type: none;
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+.dropdown-list  li{
+  font-size: 14px;
+  height: 20px;
+}
+
+.dropdown-list  li > a{
+  color: black;
+}
+.dropdown-list a:hover{
+ color: black;
+}
+
+.dropdown-list li:hover{
+  background-color: lightgray;
 }
 
 .App-header {

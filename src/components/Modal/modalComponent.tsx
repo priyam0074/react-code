@@ -1,95 +1,40 @@
-import React, { useState, SyntheticEvent } from "react";
-import { Button, Modal, Header, Dropdown, DropdownItemProps } from "semantic-ui-react";
-import countryOptions from "../../__json__/data/searchData.json";
+import React, { useState } from "react";
+import {
+  Button,
+  Modal,
+  Header,
+} from "semantic-ui-react";
+// import countryOptions from "../../__json__/data/searchData.json";
+import ReactSelect  from '../Modal/menu'
 
-const initialFilterQuery = {
-    name: 'Al',
-    email: '',
-    isOwner: false,
-}
-
-const ModalComponent= () => {
-    const [status, setStatus] = useState([])
+const ModalComponent = () => {
+  const [showDropdown, setshowDropdown] = useState({open: false});
+  
+  const openModal =() => (
+    setshowDropdown({open:true})
+  )
+  const close = () =>  setshowDropdown({...showDropdown, open:false})
    
-   
-    function handleChangeStatus(
-        event: SyntheticEvent,
-        { value }: DropdownItemProps,
-      ): void {
-        
-          console.log(value)
-        
-        }
-      
   return (
-    <Modal trigger={<Button>Show Modal</Button>}>
-      <Modal.Header>Select a Photo</Modal.Header>
-      <Modal.Content image>
+    <Modal open={showDropdown.open} onClose={close} size="large" trigger={<Button onClick={openModal} style={{background:'blue', color:'white'}}>share</Button>}>
+      <Modal.Header>Share Settings</Modal.Header>
+      <Modal.Content image style={{height:'480px'}}>
         <Modal.Description>
-          <Header>Default Profile Image</Header>
+          <Header>Add Members</Header>
           <div>
-            {/* <Dropdown
-              clearable
-              fluid
-              multiple
-              className="ui selection dropdown"
-              search
-              selection
-              options={countryOptions.data}
-              placeholder="Select Country"
-            >  */}
-{console.log(countryOptions.data)}
-                        <Dropdown
-                placeholder='State'
-                fluid
-                multiple
-                search
-                selection
-               
-                value={status}
-            >
-            
-              <Dropdown.Menu>
-              <Dropdown.Header icon="tags" content='Owner' />
-                {countryOptions.data.map(
-                  (item, index1: string | number | undefined) => { 
-                    
-                      return item.isOwner ?(
-                 <Dropdown.Item
-                text={item.name}
-                value={item.name}
-                key={index1}
-                data-testid={`dropdown-update-business-item${index1}`}
-              />
-                ) : (
-                null )
-                
-                  } 
-                )}
-                 <Dropdown.Header icon="tags" content='member' />
-                {countryOptions.data.map(
-                  (item, index1: string | number | undefined) => { 
-                    
-                      return !item.isOwner ?(
-               
-                 <Dropdown.Item
-                text={item.name}
-                onClick={handleChangeStatus}
-                value={item.name}
-                key={index1}
-                data-testid={`dropdown-update-business-item${index1}`}
-              />
-                ) : (
-                null )
-                
-                  } 
-                )}
-              </Dropdown.Menu> 
-         </Dropdown>
-        </div>
-          <p>Is it okay to use this photo?</p>
+            <ReactSelect></ReactSelect>
+          </div>
         </Modal.Description>
       </Modal.Content>
+      <Modal.Actions>
+      <Button
+           onClick={close}
+           positive
+           labelPosition='right'
+           icon='checkmark'
+           content='Done'
+            />
+          </Modal.Actions>
     </Modal>
   );
 };
